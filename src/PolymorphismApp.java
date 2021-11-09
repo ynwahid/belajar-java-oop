@@ -1,4 +1,4 @@
-public class Polymorphism {
+public class PolymorphismApp {
 
   public static void main(String[] args) {
 
@@ -18,6 +18,14 @@ public class Polymorphism {
 
   //  Method polymorphism
   static void sayHello(Employee employee) {
-    System.out.println("Hello " + employee.name);
+    if (employee instanceof VicePresident) {
+      VicePresident vicePresident = (VicePresident) employee;
+      System.out.println("Hello I'm VP " + vicePresident.name + ".");
+    } else if (employee instanceof Manager) {
+      Manager manager = (Manager) employee;
+      System.out.println("Hello I'm Manager " + manager.name + ".");
+    } else {
+      System.out.println("Hello I'm Employee " + employee.name + ".");
+    }
   }
 }
