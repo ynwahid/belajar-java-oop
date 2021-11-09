@@ -1,6 +1,6 @@
 package programmer.ucup.ganteng.application;
 
-import programmer.ucup.ganteng.data.Product;
+import programmer.ucup.ganteng.data.*;
 
 public class Application {
 
@@ -9,5 +9,7 @@ public class Application {
     Product product = new Product("Mac Book Pro", 30_000_000);
     System.out.println(product.name);
     System.out.println(product.price);
+
+    Data data = new Data();
   }
 }
