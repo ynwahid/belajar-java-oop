@@ -19,5 +19,9 @@ public class ValidationApp {
     } finally {
       System.out.println("Selalu dieksekusi");
     }
+
+    LoginRequest loginRequest2 = new LoginRequest(null, null);
+    ValidationUtil.validateRuntime(loginRequest2);
+    System.out.println("Success");
   }
 }
