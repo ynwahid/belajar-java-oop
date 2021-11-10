@@ -1,11 +1,13 @@
 package programmer.ucup.ganteng.application;
 
+import programmer.ucup.ganteng.annotation.Fancy;
 import programmer.ucup.ganteng.data.LoginRequest;
 import programmer.ucup.ganteng.error.ValidationException;
 import programmer.ucup.ganteng.util.ValidationUtil;
 
 public class ValidationApp {
 
+  @Fancy(name = "ValidationMainMethod", tags = {"application", "java"})
   public static void main(String[] args) {
 
     LoginRequest loginRequest = new LoginRequest("Yusuf", "Rahasia");

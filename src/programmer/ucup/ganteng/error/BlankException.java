@@ -1,8 +1,13 @@
 package programmer.ucup.ganteng.error;
 
-public class BlankException extends RuntimeException{
+public class BlankException extends RuntimeException {
 
   public BlankException(String message) {
-      super(message);
+    super(message);
+  }
+
+  @Override
+  public String getMessage() {
+    return super.getMessage();
   }
 }

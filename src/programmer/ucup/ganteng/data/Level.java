@@ -1,5 +1,8 @@
 package programmer.ucup.ganteng.data;
 
+import programmer.ucup.ganteng.annotation.Fancy;
+
+@Fancy(name = "Level", tags = {"enum", "java"})
 public enum Level {
   STANDARD("Standard Level"),
   PREMIUM("Premium Level"),
